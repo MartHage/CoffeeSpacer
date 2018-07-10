@@ -16,7 +16,7 @@ def sendmessage(message):
 prev_coffee_time = time_start
 while True:
     time_new = time.time()
-    if time_new - prev_coffee_time >= 2*hour:
+    if time_new - prev_coffee_time >= hour:
         prev_coffee_time = time.time()
         sendmessage('You drink some coffee boi')
 
